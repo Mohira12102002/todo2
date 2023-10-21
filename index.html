@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+
+  <title>Todo app </title>
+  <link rel="stylesheet" href="./css/style.css" />
+  <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.10.2/Sortable.min.js"></script>
+</head>
+
+<body>
+  <section>
+    <div class="topbackground"></div>
+    <div class="container">
+      <header>
+        <div class="todoheadLeft">
+          <h1>Todo</h1>
+        </div>
+        <div class="todoheadRight">
+          <button id="darkMode">
+            <img src="./images/icon-sun.svg" id="sun" alt="" width="26" height="26">
+            <img src="./images/icon-moon.svg" id="moon" alt="" width="26" height="26">
+           
+          </button>
+        </div>
+      </header>
+      <form id="form">
+        <div class="square"></div>
+        <input type="text" name="text" id="inputText" autocomplete="off" placeholder="Create a new Todo..." />
+        <button id="submit" type="submit">Add Todo</button>
+      </form>
+      <div class="items">
+        <ul id="todo"></ul>
+        <div class="dashboard">
+          <div class="dashleft">
+            <span id="left">5</span>
+            <p>items left</p>
+          </div>
+          <div class="dashCenter">
+            <button class="active" id="all">All</button>
+            <button id="active">Active</button>
+            <button id="completed">Completed</button>
+          </div>
+          <div class="dashright">
+            <button id="clrcompleted">clear Completed</button>
+          </div>
+        </div>
+      </div>
+      <p class="dragPara">Drag and drop to reorder list</p>
+    </div>
+    <!-- Container End -->
+    
+  </section>
+  <script src="./main.js"></script>
+</body>
+
+</html>
